@@ -130,5 +130,15 @@ if (!rank) return message.reply(' ')
 });
 
 
+client.on('ready', async() => {
+var server = "548419135562973194"; // ايدي السررفر
+var channel = "548419135562973196";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('**ههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه**')
+    },305);
+})
+
+
+
 client.login(process.env.TOKEN);
 client2.login(process.env.TOKEN2);
